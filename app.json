@@ -15,7 +15,30 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIApplicationSceneManifest": {
+          "UIApplicationSupportsMultipleScenes": true,
+          "UISceneConfigurations": {
+            // "CPTemplateApplicationSceneSessionRoleApplication": [
+            //   {
+            //     "UISceneClassName": "CPTemplateApplicationScene",
+            //     "UISceneConfigurationName": "CarPlaySceneConfiguration",
+            //     "UISceneDelegateClassName": "TemplateSceneDelegate"
+            //   }
+            // ],
+            "UIWindowSceneSessionRoleApplication": [
+              {
+                "UISceneClassName": "UIWindowScene",
+                "UISceneConfigurationName": "AppSceneConfiguration",
+                "UISceneDelegateClassName": "WindowSceneDelegate",
+                "UISceneStoryboardFile": "SplashScreen"
+              }
+            ]
+          }
+        }
+      },
+      "bundleIdentifier": "com.banesp.expodevlauncherkeywindowbugdemo"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +48,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "542a3a74-6cf3-4dae-aa84-f1be9682d419"
+      }
     }
   }
 }
