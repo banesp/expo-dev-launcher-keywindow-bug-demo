@@ -14,7 +14,7 @@ Issue is related to iOS, so it's best to detach and open the XCode project to se
 npx expo prebuild --clean -p ios
 ```
 
-Then open iOS project `expodevlauncherkeywindowbugdemo` in XCode
+Then open iOS project `ios/expodevlauncherkeywindowbugdemo.xcworkspace` in XCode
 
 
 ## Run
