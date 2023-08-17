@@ -28,7 +28,7 @@ Run on a iOS device from XCode and it should fail with this error
 ```
 
 ## What is causing the crash
-In `app.json` there is a definition to support multiple scenes (Which is configuration necessary to support CarPlay). If this configuration is removed the project runs without exiting with the fatal error.
+In `app.json` there is a definition to support multiple scenes (Which is configuration necessary to support CarPlay). If this configuration is removed the project runs without exiting with the fatal error mentioned above
 
 
 ```
