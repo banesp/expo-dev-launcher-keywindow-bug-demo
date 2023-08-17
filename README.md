@@ -1,5 +1,5 @@
 # expo-dev-launcher-keywindow-bug-demo
-Reproduction of a bug in expo-dev-launcher
+Reproduction of a bug in expo-dev-launcher. This bug happens with Expo SDK 48 and 49. Everything worked fine up until 47
 
 ## Installation
 
