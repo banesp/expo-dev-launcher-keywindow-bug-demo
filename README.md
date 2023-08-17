@@ -9,7 +9,7 @@ yarn install
 
 
 ## Build
-Issue is related to iOS, so it's best to detach and open the XCode project to se where it fails
+Issue is related to iOS, so it's best to detach and open the XCode project to see where it fails
 ```
 npx expo prebuild --clean -p ios
 ```
