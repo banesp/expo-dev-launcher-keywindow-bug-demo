@@ -26,7 +26,7 @@ Run on a iOS device from XCode and it should fail with this error
 (lldb) 
 ```
 
-## Cause of crash
+## What is causing the crash
 In `app.json` there is a definition to support multiple scenes (Which is configuration necessary to support CarPlay). If this configuration is removed the project builds fine.
 
 ```
