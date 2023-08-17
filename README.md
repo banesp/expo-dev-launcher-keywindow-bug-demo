@@ -26,3 +26,35 @@ Run on a iOS device from XCode and it should fail with this error
 (lldb) 
 ```
 
+## Cause of crash
+In `app.json` there is a definition to support multiple scenes (Which is configuration necessary to support CarPlay). If this configuration is removed the project builds fine.
+
+```
+...,
+"infoPlist": {
+  "UIApplicationSceneManifest": {
+    // "UIApplicationSupportsMultipleScenes": true,
+    // "UISceneConfigurations": {
+    //   // "CPTemplateApplicationSceneSessionRoleApplication": [
+    //   //   {
+    //   //     "UISceneClassName": "CPTemplateApplicationScene",
+    //   //     "UISceneConfigurationName": "CarPlaySceneConfiguration",
+    //   //     "UISceneDelegateClassName": "TemplateSceneDelegate"
+    //   //   }
+    //   // ],
+    //   "UIWindowSceneSessionRoleApplication": [
+    //     {
+    //       "UISceneClassName": "UIWindowScene",
+    //       "UISceneConfigurationName": "AppSceneConfiguration",
+    //       "UISceneDelegateClassName": "WindowSceneDelegate",
+    //       "UISceneStoryboardFile": "SplashScreen"
+    //     }
+    //   ]
+    // }
+  }
+},
+...,
+```
+
+
+
