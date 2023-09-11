@@ -21,7 +21,9 @@ web-build/
 .vscode/
 
 # Builds
-ios/
+# ios/
 android/
 *.tar.gz
 *.app
+
+*.lock

@@ -17,16 +17,18 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
+        // CHANGED TO BARE WORKFLOW - Overridden from ios/Info.plist 
+        /*
         "UIApplicationSceneManifest": {
           "UIApplicationSupportsMultipleScenes": true,
           "UISceneConfigurations": {
-            // "CPTemplateApplicationSceneSessionRoleApplication": [
-            //   {
-            //     "UISceneClassName": "CPTemplateApplicationScene",
-            //     "UISceneConfigurationName": "CarPlaySceneConfiguration",
-            //     "UISceneDelegateClassName": "TemplateSceneDelegate"
-            //   }
-            // ],
+            "CPTemplateApplicationSceneSessionRoleApplication": [
+              {
+                "UISceneClassName": "CPTemplateApplicationScene",
+                "UISceneConfigurationName": "CarPlaySceneConfiguration",
+                "UISceneDelegateClassName": "TemplateSceneDelegate"
+              }
+            ],            
             "UIWindowSceneSessionRoleApplication": [
               {
                 "UISceneClassName": "UIWindowScene",
@@ -37,6 +39,7 @@
             ]
           }
         }
+        */
       },
       "bundleIdentifier": "com.banesp.expodevlauncherkeywindowbugdemo"
     },
